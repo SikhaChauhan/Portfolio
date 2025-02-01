@@ -38,7 +38,7 @@ export default function Portfolio() {
                 />
               </motion.div> */}
 
-<motion.div
+{/* <motion.div
   initial={{ opacity: 0, x: -50 }}
   animate={{ opacity: 1, x: 0 }}
   transition={{ duration: 0.8 }}
@@ -53,8 +53,25 @@ export default function Portfolio() {
     height={100}
     className="relative z-10 w-full mt-10 max-w-lg mx-auto rounded-full"
   />
-</motion.div>
+</motion.div> */}
 
+<motion.div
+  initial={{ opacity: 0, x: -50 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.8 }}
+  className="relative"
+>
+  <div className="absolute -inset-4 bg-gradient-to-r from-red-500/30 to-orange-500/30 rounded-full blur-3xl" />
+  
+  <Image
+    src={img}
+    alt="Portfolio Image"
+    layout="intrinsic" // This will maintain the original aspect ratio
+    width={200} // You can set a max width to avoid it getting too large
+    height={200} // Maintain aspect ratio for height
+    className="relative z-10 mt-10 w-full max-w-lg mx-auto rounded-full"
+  />
+</motion.div>
 
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
