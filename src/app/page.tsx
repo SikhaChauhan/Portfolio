@@ -49,8 +49,8 @@ export default function Portfolio() {
     src={img}
     alt="Portfolio Image"
     layout="intrinsic" 
-    width={300}  
-    height={300}
+    width={100}  
+    height={100}
     className="relative z-10 w-full mt-10 max-w-lg mx-auto rounded-full"
   />
 </motion.div>
