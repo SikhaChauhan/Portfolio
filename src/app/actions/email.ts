@@ -7,7 +7,7 @@ export async function sendEmail(formData: FormData) {
 
   try {
     // Ensure the API endpoint is correctly formed
-    const apiEndpoint = "https://portfolio-zmdt.vercel.app/api/send-emails"; // Fallback for local development
+    const apiEndpoint = "https://portfolio-sikha-chauhan.vercel.app/api/send-emails"; // Fallback for local development
 
     const response = await fetch(apiEndpoint, {
       method: "POST",
