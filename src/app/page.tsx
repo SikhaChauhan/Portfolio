@@ -67,8 +67,8 @@ export default function Portfolio() {
     src={img}
     alt="Portfolio Image"
     layout="intrinsic" // This will maintain the original aspect ratio
-    width={350} // You can set a max width to avoid it getting too large
-    height={350} // Maintain aspect ratio for height
+    width={370} // You can set a max width to avoid it getting too large
+    height={370} // Maintain aspect ratio for height
     className="relative z-10 mt-10 max-w-md mx-auto rounded-full"
   />
 </motion.div>
