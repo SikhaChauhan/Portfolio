@@ -32,7 +32,7 @@ export default function Navigation() {
     })
 
     return () => observer.disconnect()
-  }, [])
+  }, [links])
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault()
