@@ -128,7 +128,7 @@ export default function Navigation() {
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="py-6 fixed top-0 z-50 bg-black/50 backdrop-blur-md w-full"
+      className="py-3 fixed top-0 z-50 bg-black/50 backdrop-blur-md w-full"
     >
       <nav className="flex justify-start items-center w-full px-4">
         <motion.span
