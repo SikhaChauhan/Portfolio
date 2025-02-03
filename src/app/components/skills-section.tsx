@@ -5,15 +5,15 @@ import { motion } from "framer-motion"
 const skills = [
   {
     category: "Frontend",
-    items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Redux", "Vue.js"],
+    items: ["React", "Next.js", "Tailwind CSS", "Redux"],
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express", "Python", "Django", "PostgreSQL", "MongoDB"],
+    items: ["Node.js", "Express", "Python", "MongoDB"],
   },
   {
     category: "Tools & Others",
-    items: ["Git", "Docker", "AWS", "Firebase", "Jest", "Cypress"],
+    items: ["Git", "Firebase"],
   },
 ]
 
