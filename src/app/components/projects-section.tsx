@@ -1,6 +1,7 @@
 "use client"
 import { motion } from "framer-motion"
-import { ExternalLink, Github } from "lucide-react"
+// import { ExternalLink, Github } from "lucide-react"
+import { Github } from "lucide-react"
 import Image from "next/image";
 
 
@@ -19,44 +20,41 @@ const projects = [
     description: "Questa Blog is a dynamic and interactive blogging platform where users can create, edit, and share their thoughts. It features robust user authentication, real-time updates, and a clean, modern interface. Built with React.js, Node.js, and MongoDB, Questa Blog ensures smooth performance and scalability.",
     image: "/resume/Questa.png",
     tags: ["React.js", "Node.js", "Tailwind CSS", "MongoDB"],
-    liveUrl: "#",
+    // liveUrl: "#",
     githubUrl: "https://github.com/SikhaChauhan/Questa_Blog",
   },
   {
-    title: "PillTrust",
-    description: "",
-    // image: "/Foodeasy.png",
-    image: "/resume/cheff.jpg",
-    tags: ["Angular", "ASP .Net", "SQL"],
-    // liveUrl: "#",
-    githubUrl: "https://github.com/SikhaChauhan/Foodeasy",
-  },
-  {
-    title: "HR Analytics System ",
-    description: "",
-    // image: "/Foodeasy.png",
-    image: "/resume/cheff.jpg",
-    tags: ["Java Spring Boot", "React.js", "PostgreSQL", "Spring Security", "JWT", "Recharts", "Tailwind CSS"],
-    // liveUrl: "#",
-    githubUrl: "https://github.com/SikhaChauhan/Foodeasy",
-  },
-  {
-    title: "TheatreChalo – Movie Listing & Management Platform",
-    description: "",
-    // image: "/Foodeasy.png",
-    image: "/resume/cheff.jpg",
-    tags: ["React.js", "Redux", "Bootstrap", "Node.js", "Express.js", "MongoDB", "Mongoose"],
-    // liveUrl: "#",
-    githubUrl: "https://github.com/SikhaChauhan/Foodeasy",
-  },
-  {
-    title: "Munify",
-    description: "Munify is a vibrant music website designed for music enthusiasts to explore, stream, and share their favorite tracks. With an engaging user interface built using HTML, CSS, and JavaScript, Munify offers curated playlists, artist profiles, and a seamless listening experience for music lovers.",
-    image: "/resume/Munify.png",
-    tags: ["HTML", "CSS", "Javascript"],
-    // liveUrl: "#",
-    githubUrl: "https://github.com/SikhaChauhan/Ravel-The-Music-Buddy",
-  },
+  title: "PillTrust",
+  description: "A complete pharmacy management system built using Angular and ASP.NET Core Web API. It enables secure medicine inventory tracking, prescription management, user roles (admin, pharmacist, customer), and billing with JWT-based authentication. Designed with SQL Server for robust data handling.",
+  image: "/resume/pill.png",
+  tags: ["Angular", "ASP .Net", "SQL"],
+  // liveUrl: "#",
+  githubUrl: "https://github.com/SikhaChauhan/PillTrust",
+},
+{
+  title: "HR Analytics System",
+  description: "An internal HR dashboard to track employee performance, attrition risk, and feedback analytics. Built with Spring Boot backend and React.js frontend, secured with JWT and Spring Security. Features dynamic charts (Recharts), advanced filters, and a responsive UI with Tailwind CSS.",
+  image: "/resume/hr.png",
+  tags: ["Java Spring Boot", "React.js", "PostgreSQL", "Spring Security", "JWT", "Recharts", "Tailwind CSS"],
+  // liveUrl: "#",
+  githubUrl: "https://github.com/SikhaChauhan/HR-Analytics-System",
+},
+{
+  title: "TheatreChalo – Movie Listing & Management Platform",
+  description: "A full-stack MERN application for movie listings and management. Includes user authentication (JWT), movie CRUD operations, category filtering, and an admin dashboard. Designed for performance with Redux state management and optimized MongoDB queries.",
+  image: "/resume/theatre.png",
+  tags: ["React.js", "Redux", "Bootstrap", "Node.js", "Express.js", "MongoDB", "Mongoose"],
+  // liveUrl: "#",
+  githubUrl: "https://github.com/SikhaChauhan/TheatreChalo",
+},
+{
+  title: "Munify",
+  description: "Munify is a vibrant music website designed for music enthusiasts to explore, stream, and share their favorite tracks. With an engaging user interface built using HTML, CSS, and JavaScript, Munify offers curated playlists, artist profiles, and a seamless listening experience for music lovers.",
+  image: "/resume/Munify.png",
+  tags: ["HTML", "CSS", "Javascript"],
+  // liveUrl: "#",
+  githubUrl: "https://github.com/SikhaChauhan/Ravel-The-Music-Buddy",
+},
 ]
 
 export default function ProjectsSection() {
@@ -93,14 +91,14 @@ export default function ProjectsSection() {
                 priority={index === 0} 
               />
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
-                  <a
+                  {/* <a
                     href={project.liveUrl}
                     className="p-2 bg-red-500 rounded-full hover:bg-red-600 transition-colors"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <ExternalLink className="w-5 h-5" />
-                  </a>
+                  </a> */}
                   <a
                     href={project.githubUrl}
                     className="p-2 bg-red-500 rounded-full hover:bg-red-600 transition-colors"
