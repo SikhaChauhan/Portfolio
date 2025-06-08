@@ -5,6 +5,7 @@ import { Github } from "lucide-react"
 import Image from "next/image";
 
 
+
 const projects = [
   {
     title: "Foodeasy",
