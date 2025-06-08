@@ -92,6 +92,7 @@ export default function Navigation() {
     { href: "#projects", label: "Projects" },
     { href: "#skills", label: "Skills" },
     { href: "#education", label: "Education" },
+    { href: "#internship", label: "Internship" },
     { href: "#contact", label: "Contact" },
   ], []); // No dependencies means the array will not change on each render
 

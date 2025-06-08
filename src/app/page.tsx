@@ -7,6 +7,7 @@ import ProjectsSection from "./components/projects-section"
 import SkillsSection from "./components/skills-section"
 import EducationSection from "./components/education-section"
 import ContactSection from "./components/contact-section"
+import InternshipSection from "./components/internship-section"
 import img from "../../public//resume/123.jpg";
 import Image from "next/image"
 
@@ -132,6 +133,7 @@ export default function Portfolio() {
           <ProjectsSection />
           <SkillsSection />
           <EducationSection />
+          <InternshipSection />
           <ContactSection />
         </main>
       </div>

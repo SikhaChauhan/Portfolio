@@ -4,16 +4,24 @@ import { motion } from "framer-motion"
 
 const skills = [
   {
+    category: "Programming Languages",
+    items: ["C#", "Java", "JavaScript"]
+  },
+  {
     category: "Frontend",
-    items: ["React", "Next.js", "Tailwind CSS", "Redux"],
+    items: ["React.js", "Tailwind CSS", "Angular","HTML5", "CSS3", "Bootstrap"],
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express", "Python", "MongoDB"],
+    items: ["Node.js", "Express.js", "RESTful APIs", ".NET Core", "ASP.NET", "Spring Boot"],
+  },
+  {
+    category: "Database",
+    items: ["MongoDb", "SQL"],
   },
   {
     category: "Tools & Others",
-    items: ["Git", "Firebase"],
+    items: ["Git", "Postman", "SQL Server"],
   },
 ]
 
