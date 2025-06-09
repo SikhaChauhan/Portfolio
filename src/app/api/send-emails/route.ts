@@ -17,7 +17,7 @@ export async function POST(req: Request) {
     // Ensure environment variables are set
     const emailUser = process.env.EMAIL_USER;
     const emailPass = process.env.EMAIL_PASS;
-    const emailTo = process.env.EMAIL_TO || emailUser;
+    const emailTo = process.env.TO_EMAIL ;
 
     if (!emailUser || !emailPass) {
       return NextResponse.json(
@@ -37,7 +37,7 @@ export async function POST(req: Request) {
 
     // Email options
     const mailOptions = {
-      from: `"${name}" <${email}>`, // Sender's name and email
+      from: `"${name}" <${emailUser}>`, // Sender's name and email
       to: emailTo, // Your email address or fallback
       subject: `New Portfolio Contact: ${name}`,
       replyTo: email, // Allow direct replies to the sender
@@ -59,6 +59,10 @@ export async function POST(req: Request) {
       `,
     };
 
+    console.log("EMAIL_USER:", process.env.EMAIL_USER);
+    console.log("EMAIL_PASS:", process.env.EMAIL_PASS ? "Provided" : "Missing");
+    console.log("TO_EMAIL:", process.env.TO_EMAIL);
+
     // Send email
     await transporter.sendMail(mailOptions);
 
@@ -75,3 +79,6 @@ export async function POST(req: Request) {
     );
   }
 }
+
+
+

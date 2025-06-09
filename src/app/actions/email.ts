@@ -36,7 +36,8 @@ export async function sendEmail(formData: FormData) {
 
     const data = await response.json();
     return { success: true, message: data.message };
-  } catch (error) {
+  } 
+  catch (error) {
     console.error("Error sending email: ", error);
 
     return {
@@ -45,3 +46,5 @@ export async function sendEmail(formData: FormData) {
     };
   }
 }
+
+

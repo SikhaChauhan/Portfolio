@@ -6,8 +6,9 @@ import Navigation from "./components/navigation"
 import ProjectsSection from "./components/projects-section"
 import SkillsSection from "./components/skills-section"
 import EducationSection from "./components/education-section"
-import ContactSection from "./components/contact-section"
+// import ContactSection from "./components/contact-section"
 import InternshipSection from "./components/internship-section"
+import FooterSection from "./components/footer-section" 
 import img from "../../public//resume/123.jpg";
 import Image from "next/image"
 
@@ -19,7 +20,7 @@ export default function Portfolio() {
       <div className="container mx-auto px-4">
         <Navigation />
         
-        <main className="relative z-10">
+        <main className="relative z-10 pt-20">
           <div id="home" className="min-h-[calc(100vh-80px)] flex items-center">
             {/* Hero section content */}
             <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -78,12 +79,12 @@ export default function Portfolio() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="space-y-6"
+                className="space-y-4"
               >
-                <h1 className="text-5xl lg:text-7xl font-bold">
+                <h1 className="text-4xl lg:text-5xl font-bold ">
                   Hi, It&apos;s{" "}
                   <span className="text-red-500 inline-block hover:scale-110 transition-transform">
-                    Sikha
+                    Sikha Chauhan
                   </span>
                 </h1>
                 <h2 className="text-3xl lg:text-5xl text-gray-400">
@@ -115,8 +116,7 @@ export default function Portfolio() {
 
                 <div className="flex gap-4">
                   <motion.a
-                    // href="/5.pdf"
-                    href="/resume/Sikha_Resume-1.pdf"
+                    href="/resume/Resume.pdf"
                     download = "Sikha_Resume.pdf"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
@@ -134,7 +134,8 @@ export default function Portfolio() {
           <SkillsSection />
           <EducationSection />
           <InternshipSection />
-          <ContactSection />
+          {/* <ContactSection /> */}
+          <FooterSection />
         </main>
       </div>
     </div>
